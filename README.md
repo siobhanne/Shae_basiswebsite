@@ -32,19 +32,19 @@ De surface plane
 
 ## Je website
 
-<details>
+<details open>
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-https://www.disneyplus.com/nl-nl/home 
+https://www.disneylandparis.com/nl-nl/
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 homepagina
-<img src="images/smallscreen 1 home.png" width="375px" alt="homepagina met verschillende film en serie aanbod">
+<img src="images/smallscreenHome.PNG" width="375px" alt="homepagina met verschillende film en serie aanbod">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 ontdekpagina
-<img src="images/smallscreen 2 ontdek.png" width="375px" alt="zoekfunctie en ontdek voor inspiratie">
+<img src="images/smallscreenTickets.PNG" width="375px" alt="zoekfunctie en ontdek voor inspiratie">
  
 </details>
 
