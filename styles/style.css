@@ -3,11 +3,16 @@
   box-sizing:border-box;  
 }
 
+html body {
+  margin: 0;
+  padding: 0;
+}
+
 
 :root {
+  /* --primaireButton: ;  */
 
 
-  
 }
 
 
@@ -19,13 +24,55 @@
 
 
 
+section {
+  padding: 32px 0;
+}
 
+section:nth-of-type(even) {
+  background-color: #f7f7f7;
+}
 
 /**********************************************************************************************************/
 
 /**********/
-/* HEADER */
+/* NAVIGATIE / HEADER */
 /**********/
+
+header {
+  position: absolute;
+
+  margin: 0;
+  padding: 0 1em;
+
+  height: 60px;
+  
+  top: 0;
+  left: 0;
+  right: 0;
+
+  background-color: pink;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0;
+}
+
+nav ul li:nth-of-type(2) img {
+  width: 126px;
+  height: auto;
+}
+
+/* nav ul li:first-of-type select::before { */
+
+header nav ul li:nth-of-type(1)::before {  
+  content:'\2630';
+}
+
 
 
 
@@ -65,14 +112,37 @@
 
 
 /**********/
-/* SECTION 1  */
+/* SECTION 1  - ACHTER FORM*/
 /**********/
 
+section:first-of-type a img {
+  width: 100%;
+  margin: 0;
+}
 
 
 /**********/
-/* SECTION 2 IN 1 */
+/* SECTION 2 IN 1 - FORM */
 /**********/
+
+section section {
+  background-color: pink;
+  margin: 0 2em;
+  padding: 8px 24px;
+
+  transform: translatey(-1em);
+
+  box-sizing: border-box;
+  border-radius: 16px;
+  box-shadow: 0px 4px 32px rgb(0 0 0 / 10%);
+}
+
+section section form fieldset legend {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
 
 
 
@@ -93,6 +163,7 @@
 /**********/
 /* SECTION 5 - ARTICLES */
 /**********/
+
 
 
 
