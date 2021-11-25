@@ -56,13 +56,13 @@ ontdekpagina
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele pagina: 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+<img src="./images/breakdownschets_mobiel.png" width="375px" alt="breakdown van de hele pagina">
 
-### dynamisch deel (bijv menu): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+### dynamisch deel (van het menu): 
+<img src="./images/breakdownschets_menuUit_mobiel.png" width="375px" alt="breakdown van een dynamisch deel">
 
-### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+### wellicht nog een dynamisch deel (van eerste mainsection nav): 
+<img src="./images/breakdownschets_dynamischeForm_mobiel.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
