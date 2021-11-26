@@ -61,7 +61,7 @@ section {
   padding: 32px 0;
 }
 
-section:nth-of-type(even) {
+main > section:nth-of-type(odd) {
   background-color: #f7f7f7;
 }
 
@@ -95,7 +95,7 @@ nav ul {
   padding: 0;
 }
 
-nav ul li:nth-of-type(2) img {
+nav ul li:nth-of-type(2) a img {
   width: 126px;
   height: auto;
 }
@@ -151,6 +151,8 @@ header nav ul li:nth-of-type(1)::before {
 section:first-of-type a img {
   width: 100%;
   margin: 0;
+
+  /* border-radius: 0 0 20% 20%; */
 }
 
 
@@ -163,11 +165,15 @@ section section {
   margin: 0 2em;
   padding: 8px 24px;
 
-  transform: translatey(-1em);
+  transform: translatey(-2.5em);
 
   box-sizing: border-box;
   border-radius: 16px;
   box-shadow: 0px 4px 32px rgb(0 0 0 / 10%);
+}
+
+section section form fieldset {
+  border-style: none;
 }
 
 section section form fieldset legend {
@@ -176,6 +182,30 @@ section section form fieldset legend {
   flex-direction: column;
 }
 
+section section form fieldset legend select {
+  width: 264px;
+  height: 40px;
+}
+
+section section form fieldset legend input:nth-of-type(2), section section form fieldset legend select:nth-of-type(1) {
+  margin-bottom: 16px;
+}
+
+/* kies je data */
+section section form fieldset legend input:nth-of-type(1), section section form fieldset legend input:nth-of-type(2) {
+  height: 40px;
+  /* width: 100px; */
+  /* display: ; */
+  /* flex-wrap: wrap; */
+}
+
+
+section section form fieldset legend button {
+  width: 264px;
+  height: 40px;
+
+  margin: 20px 0;
+}
 
 
 
