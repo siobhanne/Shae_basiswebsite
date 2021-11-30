@@ -7,3 +7,14 @@ function toggleMenu(event) {
   deNav = event.target.parentNode;
   deNav.classList.toggle("toonMenu");
 }
+
+
+
+var deSearch = document.querySelector("nav label");
+
+deSearch.addEventListener("click", toggleSearch);
+
+function toggleSearch(event) {
+  searchBalk = event.target.parentNode;
+  searchBalk.classList.toggle("toonSearch");
+}

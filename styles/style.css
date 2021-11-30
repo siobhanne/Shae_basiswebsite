@@ -1,6 +1,9 @@
 /* CSS Document */
 *, *::after, *::before {
   box-sizing:border-box;  
+
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -30,9 +33,6 @@ html body {
   /* Avenir checken - kent ie niet? */
   font-family: 'Avenir', Helvetica;
   color: var(--bodyTekst);
-
-  margin: 0;
-  padding: 0;
 
   width: 375px;
   height: auto;
@@ -96,6 +96,8 @@ header nav {
 
   width: 375px;
   height: 60px;
+
+  padding: 10px;
 
   position: relative;
   z-index: 100;
@@ -250,14 +252,24 @@ header nav a img {
 /* HEADER SEARCH */
 
 header nav input {
-  width: 0;
-  height: 0;
-  border: none;
+  display: none;
+  transition: 1s ease;
 }
 
-header nav input::before {
+header nav.toonSearch input {
+  display: block;
+  width: 311px;
+}
+
+header nav.toonSearch a img {
+  display: none;
+}
+
+
+header nav label::before {
   content: url("../images/searchIcon.png");
 }
+
 
 
 /* HEADER DIV INFOBLOK */
@@ -307,7 +319,6 @@ header > a img {
 
 
 
-
 /**********************************************************************************************************/
 
 /**********/
@@ -319,14 +330,14 @@ header > a img {
 
 
 /**********/
-/* SECTION 9 - DROPDOWN */
+/* SECTION 8 - DROPDOWN */
 /**********/
 
 
 
 
 /**********/
-/* SECTION 10 - DISCLAIMER */
+/* SECTION 9 - DISCLAIMER */
 /**********/
 
 
@@ -351,7 +362,7 @@ section:first-of-type {
   margin: 0 2em;
   padding: 8px 24px;
 
-  transform: translatey(-2.5em);
+  transform: translatey(-4em);
 
   box-sizing: border-box;
   border-radius: 16px;
@@ -396,40 +407,42 @@ section:first-of-type form fieldset legend button {
 
 
 /**********/
-/* SECTION 3 - VIDEO */
+/* SECTION 2 - VIDEO */
 /**********/
 
 
 
 
 /**********/
-/* SECTION 4 - SLIDER */
+/* SECTION 3 - SLIDER */
 /**********/
 
 
 
 
 /**********/
-/* SECTION 5 - ARTICLES */
+/* SECTION 4 - ARTICLES */
+/**********/
+
+main section:nth-of-type(4) img {
+  width: 375px;
+}
+
+
+
+/**********/
+/* SECTION 5 - VIDEO TIPS */
 /**********/
 
 
 
 
-
 /**********/
-/* SECTION 6 - VIDEO TIPS */
-/**********/
-
-
-
-
-/**********/
-/* SECTION 7 - ARTICLE NIEUWS */
+/* SECTION 6 - ARTICLE NIEUWS */
 /**********/
 
 
 
 /**********/
-/* SECTION 8 - VRAGEN */
+/* SECTION 7 - VRAGEN */
 /**********/
