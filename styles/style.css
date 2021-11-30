@@ -15,6 +15,7 @@
   /* transition: none 0s ease 0s  */
   --secundaireButton: 2px solid rgb(0, 70, 228);
   --secundaireButtonTekst: rgb(0, 70, 228);
+
 }
 
 
@@ -64,8 +65,14 @@ section {
   padding: 32px 0;
 }
 
-main > section:nth-of-type(odd) {
+main {
   background-color: #f7f7f7;
+  top: 0;
+}
+
+main > section:nth-of-type(even) {
+  /* background-color: #f7f7f7; */
+  background-color: white;
 }
 
 /**********************************************************************************************************/
@@ -74,12 +81,18 @@ main > section:nth-of-type(odd) {
 /* NAVIGATIE / HEADER */
 /**********/
 
+header:not(header nav) {
+  z-index: 200;
+}
+
 header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  background-color: pink;
+  background-color: white;
+
+  border-bottom: 1px solid rgb(228, 232, 236);
 
   width: 375px;
   height: 60px;
@@ -94,12 +107,18 @@ header nav button::before {
   font-size: 22px;
 }
 
+header nav.toonMenu button::before {
+  content: url("../images/xMenu.svg");
+  font-size: 22px;
+}
+
 header nav button {
   display: flex;
   flex-direction: column;
   align-items: center;
   
   font-size: 11px;
+  color: var(--bodyTekst);
 
   background-color: transparent;
   border: none;
@@ -137,14 +156,25 @@ header nav.toonMenu ul {
   transform: translateY(60px);
 }
 
-header nav ul li a {
+
+/* pijl naar rechts */
+header nav ul li:not(li:nth-of-type(1), li:nth-of-type(2), li:nth-of-type(3)) a::after {
+  content: url("../images/pijlMenu.png");
+  margin-left: 8px;
+  position: relative;
+  top: 4px;
+}
+
+/* alle tekst / A'tjes */
+header nav a {
   text-decoration: none;
   color: var(--bodyTekst);
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   font-size: var(--pSize);
 }
 
+/* alle li'tjes */
 header nav ul li {
   margin-bottom: 42px;
 }
@@ -180,23 +210,101 @@ header nav ul li:nth-of-type(2) a {
   box-shadow: rgb(9 17 41 / 10%) 0px 2px 4px;
 }
 
+/* taalinstellingen en inloggen naast elkaar */
+
+
+/* parktijden */
+header nav ul li:nth-of-type(3) a::before {
+  content: url("../images/parktijdenMenu.svg");
+  margin-right: 7px;
+}
+
+header nav ul li:nth-of-type(3) a {
+  display: flex;
+  align-items: center;
+
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: none;
+  color: #8A9BAE;
+
+  width: 115px;
+  height: 30px;
+
+  border: 2px solid white;
+  border-radius: 30px;
+  box-shadow: rgb(9 17 41 / 10%) 0px 2px 4px;
+}
+
+
 /* logo */
 header nav a img {
   width: 126px;
   height: auto;
 }
 
-/* nav ul li:first-of-type select::before { */
 
-/* header nav ul li:nth-of-type(1)::before {  
-  content:'\2630';
-} */
+/* *******************************************xx       HIER WAS JE */
+/* *******************************************xx       HIER WAS JE */
+/* *******************************************xx       HIER WAS JE */
+/* HEADER SEARCH */
+
+header nav input {
+  width: 0;
+  height: 0;
+  border: none;
+}
+
+header nav input::before {
+  content: url("../images/searchIcon.png");
+}
 
 
 /* HEADER DIV INFOBLOK */
-/* header div {
+header div {
+  width: 375px;
+  height: 56px;
+
   padding: 10px;
-} */
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  border-left: 6px solid rgb(118, 64, 161);
+  /* background-image: linear-gradient(
+    179.34deg, rgb(118, 64, 161) 0%, rgb(0, 70, 228) 100%);
+     */
+}
+
+header div p {
+  margin: 0;
+  text-align: center;
+
+  width: 241px;
+  font-weight: 600;
+}
+
+header div::before {
+  content: url("../images/infoIcon.svg");
+  height: 24px;
+  
+}
+
+header div::after {
+  content: url("../images/pijlIcon.svg");
+  height: 14px;
+}
+
+
+
+/* TINK ACHTERGROND */
+header > a img {
+  width: 100%;
+  margin: 0;
+}
+
+
 
 
 
@@ -232,23 +340,13 @@ header nav a img {
 /**********/
 
 
-/**********/
-/* SECTION 1  - ACHTER FORM*/
-/**********/
-
-section:first-of-type a img {
-  width: 100%;
-  margin: 0;
-
-  /* border-radius: 0 0 20% 20%; */
-}
 
 
 /**********/
-/* SECTION 2 IN 1 - FORM */
+/* SECTION 1  - FORM*/
 /**********/
 
-section section {
+section:first-of-type {
   background-color: pink;
   margin: 0 2em;
   padding: 8px 24px;
@@ -260,27 +358,27 @@ section section {
   box-shadow: 0px 4px 32px rgb(0 0 0 / 10%);
 }
 
-section section form fieldset {
+section:first-of-type form fieldset {
   border-style: none;
 }
 
-section section form fieldset legend {
+section:first-of-type form fieldset legend {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 }
 
-section section form fieldset legend select {
+section:first-of-type form fieldset legend select {
   width: 264px;
   height: 40px;
 }
 
-section section form fieldset legend input:nth-of-type(2), section section form fieldset legend select:nth-of-type(1) {
+section:first-of-type form fieldset legend input:nth-of-type(2), section section form fieldset legend select:nth-of-type(1) {
   margin-bottom: 16px;
 }
 
 /* kies je data */
-section section form fieldset legend input:nth-of-type(1), section section form fieldset legend input:nth-of-type(2) {
+section:first-of-type form fieldset legend input:nth-of-type(1), section section form fieldset legend input:nth-of-type(2) {
   height: 40px;
   /* width: 100px; */
   /* display: ; */
@@ -288,7 +386,7 @@ section section form fieldset legend input:nth-of-type(1), section section form 
 }
 
 
-section section form fieldset legend button {
+section:first-of-type form fieldset legend button {
   width: 264px;
   height: 40px;
 

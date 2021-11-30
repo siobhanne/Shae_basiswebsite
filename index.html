@@ -20,9 +20,10 @@
 	<header>
 		<nav>
 			<button aria-hidden="true">Menu</button>
-			
+
 			<ul>
-				<li><a href="https://www.disneylandparis.com/language-selection/"><img src="./images/settingMenu.svg" alt="taalinstellingen laat Nederlandse vlag zien"></a></li>
+				<li><a href="https://www.disneylandparis.com/language-selection/"><img src="./images/settingMenu.svg"
+							alt="taalinstellingen laat Nederlandse vlag zien"></a></li>
 				<!-- ::before -->
 				<li><a href="https://www.disneylandparis.com/nl-nl/my-disneyland/login">Inloggen</a></li>
 				<li><a href="https://www.disneylandparis.com/nl-nl/agenda/park-tijden/">Parktijden</a></li>
@@ -39,74 +40,75 @@
 			<a href="index.html"><img src="./images/disneyLogo.svg" alt="Disneyland Paris logo"></a>
 
 			<!-- search -->
-			<a href="https://www.w3schools.com/howto/howto_css_searchbar.asp">Search</a>
-	
-			<!-- <div>
-				<p>Alles wat je moet weten voordat je naar Disneyland Paris komt</p>
-			</div> -->
+			<!-- <a href="https://www.w3schools.com/howto/howto_css_searchbar.asp">Search</a> -->
+
+			<!-- <label>search</label> -->
+			<input type="search">
+
 		</nav>
 
-	
+
+		<div>
+			<p>Alles wat je moet weten voordat je naar Disneyland Paris komt</p>
+		</div>
+
+		<a href="https://www.disneylandparis.com/nl-nl/aanbod/geef-disneyland-paris-cadeau/">
+			<img src="./images/tinkAchtergrond.png" alt="achtergrond met tinkerbel en doornroosjes kasteel">
+		</a>
+
 
 	</header>
 
 	<main>
-		<!-- SECTION 1  - ACHTER FORM -->
+		<!-- SECTION 1 - FORM -->
 		<section>
-			<!-- Hoe doe je hier de radius goed? -->
-			<a href="https://www.disneylandparis.com/nl-nl/aanbod/geef-disneyland-paris-cadeau/">
-				<img src="./images/tinkAchtergrondStaand.jpeg" alt="achtergrond met tinkerbel en doornroosjes kasteel">
-			</a>
-			
-			<!-- SECTION 2 IN 1 - FORM -->
-			<section>
-				<nav>
-					<ul>
-						<li>Verblijf + Tickets</li>
-						<li>Tickets</li>
-					</ul>
-				</nav>
+			<nav>
+				<ul>
+					<li>Verblijf + Tickets</li>
+					<li>Tickets</li>
+				</ul>
+			</nav>
 
-				<form>
-					<fieldset>
-						<legend>
-							<label>Kies je data</label>
-							<input type="date" name="aankomstdatum" value="Aankomstdatum" min="2021-11-25">
-							<input type="date" name="vertrekdatum" value="vertrekdatum" min="2021-11-26">
+			<form>
+				<fieldset>
+					<legend>
+						<label>Kies je data</label>
+						<input type="date" name="aankomstdatum" value="Aankomstdatum" min="2021-11-25">
+						<input type="date" name="vertrekdatum" value="vertrekdatum" min="2021-11-26">
 
-							<label>Hotels & Resorts</label>
-							<select id="HotelsResorts" name="HotelsResorts">
-								<option value="alleHotels">Alle Hotels</option>
-								<option value="Disney's Davy Crockett Ranch">Disney's Davy Crockett Ranch</option>
-								<option value="Disney's Hotel New York">Disney's Hotel New York</option>
-								<option value="Disney's Sequoia Lodge">Disney's Sequoia Lodge</option>
-								<option value="Disney's Hotel Santa Fe">Disney's Hotel Santa Fe</option>
-								<option value="Dream Castle Fabulous Hotels Group">Dream Castle Fabulous Hotels Group</option>
-							</select>
+						<label>Hotels & Resorts</label>
+						<select id="HotelsResorts" name="HotelsResorts">
+							<option value="alleHotels">Alle Hotels</option>
+							<option value="Disney's Davy Crockett Ranch">Disney's Davy Crockett Ranch</option>
+							<option value="Disney's Hotel New York">Disney's Hotel New York</option>
+							<option value="Disney's Sequoia Lodge">Disney's Sequoia Lodge</option>
+							<option value="Disney's Hotel Santa Fe">Disney's Hotel Santa Fe</option>
+							<option value="Dream Castle Fabulous Hotels Group">Dream Castle Fabulous Hotels Group
+							</option>
+						</select>
 
-							<label>Kamers en gasten</label>
-							<select id="kamersGasten" name="kamersGasten">
-								<option value="1 kamer 2 Gasten">1 kamer 2 Gasten</option>
-								<option value="1 kamer 1 gast">1 kamer 1 gast</option>
-								<option value="1 kamer 3 gasten">1 kamer 3 gasten</option>
-								<option value="1 kamer 4 gasten">1 kamer 4 gasten</option>
-								<option value="2 kamers 5 gasten">2 kamers 5 gasten</option>
-								<option value="2 kamer 6 gasten">2 kamer 6 gasten</option>
-							</select>
+						<label>Kamers en gasten</label>
+						<select id="kamersGasten" name="kamersGasten">
+							<option value="1 kamer 2 Gasten">1 kamer 2 Gasten</option>
+							<option value="1 kamer 1 gast">1 kamer 1 gast</option>
+							<option value="1 kamer 3 gasten">1 kamer 3 gasten</option>
+							<option value="1 kamer 4 gasten">1 kamer 4 gasten</option>
+							<option value="2 kamers 5 gasten">2 kamers 5 gasten</option>
+							<option value="2 kamer 6 gasten">2 kamer 6 gasten</option>
+						</select>
 
-							<!-- Primaire button -->
-							<button type="submit">Vind prijzen</button>
-						</legend>
-					</fieldset>
-				</form>
-				<p>Op zoek naar het ideale moment om te komen? <a
-						href="https://www.disneylandparis.com/nl-nl/prijsschatting-kalender-disneyland-paris/">Vergelijk
-						nu de prijzen!</a></p>
-			</section>
+						<!-- Primaire button -->
+						<button type="submit">Vind prijzen</button>
+					</legend>
+				</fieldset>
+			</form>
+			<p>Op zoek naar het ideale moment om te komen? <a
+					href="https://www.disneylandparis.com/nl-nl/prijsschatting-kalender-disneyland-paris/">Vergelijk
+					nu de prijzen!</a></p>
 		</section>
 
 
-		<!-- SECTION 3 - VIDEO -->
+		<!-- SECTION 2 - VIDEO -->
 		<section>
 			<h2>Geef in 2021 het perfect cadeau</h2>
 			<p>Disneyland Paris is het perfecte cadeau voor de feestdagen waar kinderen van alle
@@ -261,7 +263,8 @@
 
 		<!-- SECTION 7 - ARTICLE NIEUWS -->
 		<section>
-			<img src="./images/nieuws_postbode.jpeg" alt="Postbode met een brief in zijn hand knipogend naar de cameraman, in kerstelijke Disneyland Paris">
+			<img src="./images/nieuws_postbode.jpeg"
+				alt="Postbode met een brief in zijn hand knipogend naar de cameraman, in kerstelijke Disneyland Paris">
 
 			<h2>Blijf op de hoogte van het laatste Disneyland Paris nieuws!</h2>
 			<p></p>
@@ -297,7 +300,7 @@
 		<!-- divider -->
 		<h2>Blijf op de hoogte</h2>
 
-		
+
 		<!-- Is dit wel een nav? -->
 		<section>
 			<nav>
