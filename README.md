@@ -44,7 +44,9 @@ homepagina
 
 #### Screenshot(s) van de tweede pagina (small screen):
 ontdekpagina
-<img src="images/smallscreenTickets.PNG" width="375px" alt="zoekfunctie en ontdek voor inspiratie">
+<!-- https://www.disneylandparis.com/nl-nl/belangrijke-informatie/belangrijke-informatie-voor-gasten/ -->
+
+<img src="images/tweede_allesWeten lange ss.png" width="375px" alt="zoekfunctie en ontdek voor inspiratie">
  
 </details>
 
